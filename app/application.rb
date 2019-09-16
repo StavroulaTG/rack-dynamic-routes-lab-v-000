@@ -2,7 +2,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    resp = Rack:Request.next(env)
+    resp = Rack:Request.next
 
     if req.path=="/items"
       resp.write "You requested the items"
